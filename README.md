@@ -4,10 +4,10 @@ In IE(9-11), after version of 2.5.14, keyboard event with modifiers and with ale
 
 # Steps to reproduce
 
-Open demo.html
-Use IME
-Type some letters
-Press enter of the keyboard
+1. Open demo.html
+2. Use IME
+3. Type some letters
+4. Press enter of the keyboard
 
 # GIF
 
