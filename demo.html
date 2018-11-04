@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="text" placeholder="alert in handler" @keydown.enter="handler1">
+    <input type="text" placeholder="window.open in handler" @keydown.enter="handler2">
+  </div>
+  <script>
+    var num = 0
+    new Vue({
+      el: '#app',
+      methods: {
+        handler1: function () {
+          alert(num++)
+        },
+        handler2: function () {
+          window.open('test')
+        }
+      }
+    })
+  </script>
+</body>
+</html>
